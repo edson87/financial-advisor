@@ -1,0 +1,24 @@
+.header {
+    background-color: #0486b2;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .title {
+        font-size: 5rem;
+    }
+
+    button {
+        background-color: #0486b2;
+        border: none;
+        line-height: 7;
+    }
+
+    .home {
+        width: 6rem;
+        background: #0486b2;
+        padding-left: 2rem;
+    }
+}

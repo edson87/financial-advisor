@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import RiskPreferences from './components/RiskPreferences';
+import { Provider } from 'react-redux'
+import {BrowserRouter as Router,  Switch, Route} from "react-router-dom";
+import store from './redux/store'
+import '@progress/kendo-theme-default/dist/all.css';
+
+import FormRiskCalculation from './components/FormRiskCalculation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Provider store={store}>
+      <div className="">   
+        <header className="">
+          <Header />
+          <Switch>
+            <Route path='/' exact component={RiskPreferences} />
+            <Route path='/calculator' component={FormRiskCalculation} />
+          </Switch>
+        </header>
+      </div>
+    </Provider>
+    </Router>
   );
 }
 

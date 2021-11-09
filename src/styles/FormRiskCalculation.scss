@@ -1,0 +1,71 @@
+section {
+    text-align: center;
+    
+    .container {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .title {
+        margin-top: 3%;
+        font-size: 1.8rem;
+        font-weight: bolder;
+    }
+
+    .submit {
+        background-color: #85CCFF;
+        font-weight: bold;
+        border: 3px solid black;
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        padding: 10px 20px 10px;
+    }
+
+    .table_risk_selected {
+        margin-top: 20px;
+
+        .risk_lvl {
+            font-weight: bolder;
+        }
+
+        table {
+            border: 1px solid #E9E9E9;
+    
+            td, th {
+                border: 1px solid #E9E9E9;
+            }
+
+            tr {
+                td,th {
+                    font-size: x-large;
+                }
+            }
+        }       
+    }
+
+    .card {
+        width: 100%;
+
+        table {
+            input {
+                width: 50%;
+            }
+        }
+    }
+
+    .new_amount {
+        color: #5000FF;
+        text-align: end;
+    }
+
+    .positive_difference {
+        color: green;
+        text-align: end;
+    }
+
+    .negative_difference {
+        color: red;
+        text-align: end;
+    }
+    
+}
